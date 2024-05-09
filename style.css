@@ -1,0 +1,141 @@
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+.container {
+    width: 100%;
+    height: 470px;
+
+}
+
+.photo {
+    background-image: url("Image/istockphoto-589135154-2048x2048.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 470px;
+}
+
+.content {
+    width: 650px;
+    height: 250px;
+    position: relative;
+    top: 150px;
+    left: 80px;
+}
+
+.content h1 {
+    color: white;
+    font-family: 'Lobster', 'cursive';
+    font-size: 55px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.content p {
+    margin-top: 5px;
+    color: white;
+    font-family: 'Lobster', 'cursive';
+    font-size: 20px;
+}
+
+.content input[type="text"] {
+    width: 350px;
+    height: 35px;
+    padding-left: 25px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    background-color: transparent;
+    border-color: white;
+    border-width: 3px;
+    color: white;
+    margin-right: 0px;
+}
+
+select {
+    background-position: right center;
+    background-repeat: no-repeat;
+    margin-left: 0px;
+    padding-right: 25px;
+    height: 42px;
+    width: 150px;
+    background-color: transparent;
+    border-color: white;
+    border-width: 3px;
+    color: white;
+}
+
+option {
+    width: 150px;
+    color: black;
+    background-color: transparent;
+}
+
+.InputBox {
+    display: flex;
+}
+
+.heading1 {
+    display: flex;
+    justify-content: center;
+}
+
+.heading1 h1 {
+    font-size: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.Category{
+    width: 95%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+.card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adjust the values to change the shadow effect */
+    padding: 20px;
+    width: 300px; /* Adjust the width as needed */
+    height: 370px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 16px;
+    margin-top: 15px;
+  }
+  
+  .card h2 {
+    color: #333333;
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 2px;
+  }
+  
+  .card p {
+    color: #666666;
+    font-size: 16px;
+  }
+  .row{
+
+    display: flex;
+    flex-direction: row ;
+  }
+  .card     img{
+    width: 300px;
+    height: 250px;
+  }
+  .card .btn{
+    height: 30px;
+    width: 150px;
+    cursor: pointer;
+    margin-left: 75px;
+    background-color: blue;
+    color: white;
+
+
+  }
+  .card .btn:hover{
+    background-color: darkblue;
+  color: lightgray;
+  }
