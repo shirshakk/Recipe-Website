@@ -1,5 +1,5 @@
 const SearchUrl = "https://api.spoonacular.com/recipes/complexSearch";
-const Key = "28a790e2c2e74e54b5e10803bc374b51";
+const Key = "242535a8bd4349f6a087851a6ab842d1";
 const mealTypes = ["Caregory", "main course", "side dish", "dessert", "appetizer", "salad", "bread", "breakfast", "soup", "beverage", "sauce", "marinade", "fingerfood", "snack", "drink"];
 
 const dropdownOptions = mealTypes.map((mealType) => {
@@ -17,7 +17,6 @@ dropdownOptions.forEach((option) => {
 
 dropdown.addEventListener("change", function () {
     const selectedMealType = dropdown.value;
-    console.log(selectedMealType);
     Search(selectedMealType);
 });
 async function Search(food) {
@@ -52,17 +51,24 @@ async function Search(food) {
             image.src=recipe.image;
             const getRecipe=document.createElement("button");
             getRecipe.classList.add("btn");
-            getRecipe.setAttribute("data-recipe-id",recipe.id);
+            getRecipe.setAttribute("data-recipe-id", recipe.id);
+            console.log(getRecipe.dataset.recipeId);
             getRecipe.textContent="Get Recipe";
             card.appendChild(title);
             card.appendChild(image);
             card.appendChild(getRecipe);
             NewRow.appendChild(card);
             console.log(food);
+            getRecipe.addEventListener("click", function(){
+                const recipeId = this.dataset.recipeId;
+                const recipeName=recipe.title;
+                const recipeImage=recipe.image
+                window.location.href = `Recipe.html?recipeID=${recipeId}&RecipeName=${recipeName}&recipeImage=${recipeImage}`
+            })
         });
         
-    
-}
-    window.addEventListener("load", function(){
-    Search("main course")
-})
+        
+    }
+        window.addEventListener("load", function(){
+            Search("main course")
+        })
