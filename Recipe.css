@@ -33,3 +33,20 @@ p {
     color: white;
     margin-bottom: 20px;
 }
+.leftbottom{
+    
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.Ingredient{
+    margin-top: 1px;
+    display: flex;
+}
+p{
+    margin-top: 6px;
+    margin-right: 20px;
+    margin-left: 13px;
+    display: inline-block;
+}
