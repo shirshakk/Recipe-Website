@@ -39,7 +39,7 @@ async function getRecipe(){
                     const RequirementText=RecipeData[0].steps[i].equipment[k].name;
                     if(RequirementText!==" ")
                         {
-                            console.log(RequirementText);
+                            // console.log(RequirementText);
                             // const text=document.createElement("p");
                             // text.textContent=RequirementText;
                             // LeftContentRequirement.appendChild(text);
